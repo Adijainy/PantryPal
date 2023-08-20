@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div>
+    <div className="bg-white">
       <h2>Made by Aditi Jain</h2>
     </div>
   );

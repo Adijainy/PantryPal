@@ -1,15 +1,19 @@
+import { Provider } from "react-redux";
 import "./App.css";
-import Body from "./components/Body";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import store from "./utils/store";
+import Body from "./components/Body";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Body />
-      <Footer />
-    </div>
+    <Provider store={store}>
+      <div className="bg-[#0ed145]">
+        <Navbar />
+        <Body />
+        <Footer />
+      </div>
+    </Provider>
   );
 }
 
